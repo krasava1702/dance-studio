@@ -29,7 +29,7 @@ const teachers = [
     name: "Фёдоров Я. М.",
     fullName: "Фёдоров Ярослав Маркович",
     description:
-      'актёр, солист театральной студии "Артист". Молодой, креативный, но уже с опытом работы с детьми в качестве преподавателя.',
+      'актёр театральной студии "Артист". Молодой, креативный, но уже с опытом работы с детьми в качестве преподавателя.',
     photo: "/images/teachers/fedorov.jpg",
     role: "преподаватель",
   },
@@ -154,25 +154,7 @@ export default function DanceStudio() {
           </p>
         </section>
 
-        <section className="mb-16 text-center">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-2xl md:text-3xl mb-8 body-font leading-relaxed font-bold" style={{ color: "#803329" }}>
-              ВАЖНО!
-              <br />С 1 по 10 сентября запись детей по телефону в группы 7-9 и 10-12 лет
-              <br />
-              10 сентября – первое пробное занятие и беседа преподавателя с родителями!
-            </p>
-            <Button
-              asChild
-              size="sm"
-              className="text-sm px-4 py-2 font-bold contact-info mb-4"
-              style={{ backgroundColor: "#F46002", color: "white" }}
-            >
-              <a href="https://t.me/OKulaeva">Тык!</a>
-            </Button>
-          </div>
-        </section>
-
+        
         <section className="mb-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
             Ключевые направления
