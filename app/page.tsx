@@ -29,7 +29,7 @@ const teachers = [
     name: "Фёдоров Я. М.",
     fullName: "Фёдоров Ярослав Маркович",
     description:
-      'актёр театральной студии "Артист". Молодой, креативный, но уже с опытом работы с детьми в качестве преподавателя.',
+      'актёр, солист театральной студии "Артист". Молодой, креативный, но уже с опытом работы с детьми в качестве преподавателя.',
     photo: "/images/teachers/fedorov.jpg",
     role: "преподаватель",
   },
@@ -152,6 +152,25 @@ export default function DanceStudio() {
             Наш проект - это творческая лаборатория для раскрытия личности, где важен каждый ребёнок, который, развивая
             свои физические данные и творческие способности может проявить себя как личность в составе команды.
           </p>
+        </section>
+
+        <section className="mb-16 text-center">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-2xl md:text-3xl mb-8 body-font leading-relaxed font-bold" style={{ color: "#803329" }}>
+              ВАЖНО!
+              <br />С 1 по 10 сентября запись детей по телефону в группы 7-9 и 10-12 лет
+              <br />
+              10 сентября – первое пробное занятие и беседа преподавателя с родителями!
+            </p>
+            <Button
+              asChild
+              size="sm"
+              className="text-sm px-4 py-2 font-bold contact-info mb-4"
+              style={{ backgroundColor: "#F46002", color: "white" }}
+            >
+              <a href="tel:+79186598598">Тык!</a>
+            </Button>
+          </div>
         </section>
 
         <section className="mb-8">
@@ -300,33 +319,28 @@ export default function DanceStudio() {
           </div>
         </section>
 
-        <section className="mb-16 text-center">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-2xl md:text-3xl leading-relaxed body-font mb-8" style={{ color: "#803329" }}>
-              Записывайтесь к нам, вместе будем подбирать{" "}
-              <span
-                className="font-bold heading-font"
-                style={{
-                  color: "#F46002",
-                  fontSize: "1.1em",
-                }}
-              >
-                ключи
-              </span>{" "}
-              к познанию себя в этом прекрасном мире через осознание своего тела и эмоций.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="text-base md:text-xl px-6 md:px-12 py-6 md:py-8 font-bold contact-info"
-              style={{ backgroundColor: "#F46002", color: "white" }}
-            >
-              <a href="https://t.me/OKulaeva" target="_blank" rel="noopener noreferrer">
-                ЗАПИСАТЬСЯ НА ПРОСМОТР
-                <br />
-                или задать вопрос
-              </a>
-            </Button>
+        <section className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
+            Где мы находимся?
+          </h2>
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="w-full rounded-lg overflow-hidden">
+              <Image
+                src="/images/map-location.png"
+                alt="Карта с адресом: Пригородная улица, 179"
+                width={1200}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-xl body-font mb-2" style={{ color: "#803329" }}>
+                Пригородная улица, 179
+              </p>
+              <p className="text-lg contact-info" style={{ color: "#AE5229" }}>
+                Приходите к нам на занятия!
+              </p>
+            </div>
           </div>
         </section>
 
@@ -469,31 +483,6 @@ export default function DanceStudio() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
-            Где мы находимся?
-          </h2>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <div className="w-full rounded-lg overflow-hidden">
-              <Image
-                src="/images/map-location.png"
-                alt="Карта с адресом: Пригородная улица, 179"
-                width={1200}
-                height={400}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            <div className="mt-6 text-center">
-              <p className="text-xl body-font mb-2" style={{ color: "#803329" }}>
-                Пригородная улица, 179
-              </p>
-              <p className="text-lg contact-info" style={{ color: "#AE5229" }}>
-                Приходите к нам на занятия!
-              </p>
             </div>
           </div>
         </section>
