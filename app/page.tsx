@@ -154,7 +154,6 @@ export default function DanceStudio() {
           </p>
         </section>
 
-        
         <section className="mb-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
             Ключевые направления
@@ -333,24 +332,51 @@ export default function DanceStudio() {
 
         <section className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
-            Где мы находимся?
+            Стоимость обучения
           </h2>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <div className="w-full rounded-lg overflow-hidden">
-              <Image
-                src="/images/map-location.png"
-                alt="Карта с адресом: Пригородная улица, 179"
-                width={1200}
-                height={400}
-                className="w-full h-auto object-cover"
-              />
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <table className="w-full">
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="px-6 py-4 text-lg body-font" style={{ color: "#803329" }}>
+                      Абонемент 8 занятий
+                    </td>
+                    <td className="px-6 py-4 text-lg font-bold text-right" style={{ color: "#F46002" }}>
+                      3500₽
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="px-6 py-4 text-lg body-font" style={{ color: "#803329" }}>
+                      Абонемент 12 занятий
+                    </td>
+                    <td className="px-6 py-4 text-lg font-bold text-right" style={{ color: "#F46002" }}>
+                      4500₽
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="px-6 py-4 text-lg body-font" style={{ color: "#803329" }}>
+                      Разовое (пробное) занятие
+                    </td>
+                    <td className="px-6 py-4 text-lg font-bold text-right" style={{ color: "#F46002" }}>
+                      500₽
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-lg body-font" style={{ color: "#803329" }}>
+                      Индивидуальное занятие
+                    </td>
+                    <td className="px-6 py-4 text-lg font-bold text-right" style={{ color: "#F46002" }}>
+                      1500₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div className="mt-6 text-center">
-              <p className="text-xl body-font mb-2" style={{ color: "#803329" }}>
-                Пригородная улица, 179
-              </p>
-              <p className="text-lg contact-info" style={{ color: "#AE5229" }}>
-                Приходите к нам на занятия!
+            <div className="mt-8 text-center">
+              <p className="text-lg body-font leading-relaxed max-w-2xl mx-auto" style={{ color: "#803329" }}>
+                В процессе занятий ребёнок сможет определиться, что ему ближе — спорт или хореография. Исходя из его
+                предпочтений, мы скорректируем учебный план, сделав акцент на выбранном направлении.
               </p>
             </div>
           </div>
@@ -443,6 +469,31 @@ export default function DanceStudio() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 heading-font" style={{ color: "#F46002" }}>
+            Где мы находимся?
+          </h2>
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="w-full rounded-lg overflow-hidden">
+              <Image
+                src="/images/map-location.png"
+                alt="Карта с адресом: Пригородная улица, 179"
+                width={1200}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-xl body-font mb-2" style={{ color: "#803329" }}>
+                Пригородная улица, 179
+              </p>
+              <p className="text-lg contact-info" style={{ color: "#AE5229" }}>
+                Приходите к нам на занятия!
+              </p>
             </div>
           </div>
         </section>
